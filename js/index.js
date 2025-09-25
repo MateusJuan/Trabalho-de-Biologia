@@ -20,3 +20,12 @@
         res.style.color = "red";
       }
     }
+
+    function rolarCarrossel(direcao) {
+        const carrossel = document.getElementById("meuCarrossel");
+        const larguraCard = 320; // largura aproximada do card + gap
+        carrossel.scrollBy({
+            left: direcao * larguraCard,
+            behavior: "smooth"
+        });
+    }

@@ -30,6 +30,43 @@
     .carousel::-webkit-scrollbar {
       display: none;
     }
+    .carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    }
+
+    .seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    border: none;
+    color: white;
+    font-size: 2em;
+    width: 50px;       /* largura fixa */
+    height: 50px;      /* altura fixa igual à largura */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%; /* círculo perfeito */
+    z-index: 10;
+    transition: 0.3s;
+    }
+
+    .seta:hover {
+    background: rgba(229,9,20,0.8); /* vermelho estilo Netflix */
+    }
+
+    .esquerda {
+    left: 5px;
+    }
+
+    .direita {
+    right: 5px;
+    }
+
 
     /* Cards maiores */
     .card {

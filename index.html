@@ -10,17 +10,29 @@
   <header><img src="./img/favicon.ico" alt="Ícone" width="100"> A Origem da Vida</header>
 
   <!-- Carrossel -->
-  <section class="carousel">
-    <div class="card" style="background-image:url('./img/Sopa_Primordial.png');" onclick="abrirPainel('Sopa Primordial','Moléculas orgânicas se formaram na Terra primitiva, dando origem à vida segundo Oparin e Haldane.')"></div>
+    <section class="carousel-container">
+    <button class="seta esquerda" onclick="rolarCarrossel(-1)">&#10094;</button>
 
-    <div class="card" style="background-image:url('./img/Experimento de Miller-Urey.png');" onclick="abrirPainel('Experimento de Miller-Urey','Miller e Urey simularam a atmosfera primitiva e conseguiram gerar aminoácidos, blocos da vida.')"></div>
+    <div class="carousel" id="meuCarrossel">
+        <div class="card" style="background-image:url('./img/Sopa_Primordial.png');" 
+        onclick="abrirPainel('Sopa Primordial','Moléculas orgânicas se formaram na Terra primitiva, dando origem à vida segundo Oparin e Haldane.')"></div>
 
-    <div class="card" style="background-image:url('./img/Panspermia.png');" onclick="abrirPainel('Panspermia','Sugere que a vida chegou à Terra vinda do espaço, transportada por meteoritos ou poeira cósmica.')"></div>
+        <div class="card" style="background-image:url('./img/Experimento de Miller-Urey.png');" 
+        onclick="abrirPainel('Experimento de Miller-Urey','Miller e Urey simularam a atmosfera primitiva e conseguiram gerar aminoácidos, blocos da vida.')"></div>
 
-    <div class="card" style="background-image:url('./img/Fontes hidrotermais.png');" onclick="abrirPainel('Fontes Hidrotermais','A vida pode ter surgido em fontes hidrotermais no fundo dos oceanos, ricas em energia e minerais.')"></div>
+        <div class="card" style="background-image:url('./img/Panspermia.png');" 
+        onclick="abrirPainel('Panspermia','Sugere que a vida chegou à Terra vinda do espaço, transportada por meteoritos ou poeira cósmica.')"></div>
 
-    <div class="card" style="background-image:url('./img/Criacionismo.png');" onclick="abrirPainel('Criacionismo','É a crença de que o universo, a Terra e todos os seres vivos foram criados por uma divindade, de forma intencional e planejada. Para os criacionistas, a origem da vida não é fruto do acaso, mas resultado da ação de um Criador. Essa visão se apoia em textos religiosos, como o Gênesis na Bíblia, e contrasta com explicações científicas como a evolução.')"></div>
-  </section>
+        <div class="card" style="background-image:url('./img/Fontes hidrotermais.png');" 
+        onclick="abrirPainel('Fontes Hidrotermais','A vida pode ter surgido em fontes hidrotermais no fundo dos oceanos, ricas em energia e minerais.')"></div>
+
+        <div class="card" style="background-image:url('./img/Criacionismo.png');" 
+        onclick="abrirPainel('Criacionismo','É a crença de que o universo, a Terra e todos os seres vivos foram criados por uma divindade, de forma intencional e planejada. Para os criacionistas, a origem da vida não é fruto do acaso, mas resultado da ação de um Criador. Essa visão se apoia em textos religiosos, como o Gênesis na Bíblia, e contrasta com explicações científicas como a evolução.')"></div>
+    </div>
+
+    <button class="seta direita" onclick="rolarCarrossel(1)">&#10095;</button>
+    </section>
+
 
   <!-- Painel de informação -->
   <div class="overlay" id="overlay" onclick="fecharPainel()"></div>
