@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Origem da Vida</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <header>🌍 A Origem da Vida</header>
+
+  <!-- Carrossel -->
+  <section class="carousel">
+    <div class="card" style="background-image:url('./img/Sopa_Primordial.png');" onclick="abrirPainel('Sopa Primordial','Moléculas orgânicas se formaram na Terra primitiva, dando origem à vida segundo Oparin e Haldane.')"></div>
+
+    <div class="card" style="background-image:url('./img/Experimento de Miller-Urey.png');" onclick="abrirPainel('Experimento de Miller-Urey','Miller e Urey simularam a atmosfera primitiva e conseguiram gerar aminoácidos, blocos da vida.')"></div>
+
+    <div class="card" style="background-image:url('./img/Panspermia.png');" onclick="abrirPainel('Panspermia','Sugere que a vida chegou à Terra vinda do espaço, transportada por meteoritos ou poeira cósmica.')"></div>
+
+    <div class="card" style="background-image:url('./img/Fontes hidrotermais.png');" onclick="abrirPainel('Fontes Hidrotermais','A vida pode ter surgido em fontes hidrotermais no fundo dos oceanos, ricas em energia e minerais.')"></div>
+
+    <div class="card" style="background-image:url('./img/Criacionismo.png');" onclick="abrirPainel('Criacionismo','É a crença de que o universo, a Terra e todos os seres vivos foram criados por uma divindade, de forma intencional e planejada. Para os criacionistas, a origem da vida não é fruto do acaso, mas resultado da ação de um Criador. Essa visão se apoia em textos religiosos, como o Gênesis na Bíblia, e contrasta com explicações científicas como a evolução.')"></div>
+  </section>
+
+  <!-- Painel de informação -->
+  <div class="overlay" id="overlay" onclick="fecharPainel()"></div>
+  <div class="painel" id="painel">
+    <h2 id="tituloPainel"></h2>
+    <p id="textoPainel"></p>
+    <button onclick="alert('Aqui você pode colocar mais informações detalhadas, imagens ou até vídeos!')">Saber mais</button>
+    <button onclick="fecharPainel()">Fechar</button>
+  </div>
+
+  <!-- Quiz -->
+  <section class="quiz">
+    <h2>🧪 Quiz Rápido</h2>
+    <p>Qual teoria defende que a vida veio do espaço?</p>
+    <button onclick="responder(true)">Panspermia</button>
+    <button onclick="responder(false)">Miller-Urey</button>
+    <div class="resultado" id="resultado"></div>
+  </section>
+
+<script src="./js/index.js"></script>
+</body>
+</html>
