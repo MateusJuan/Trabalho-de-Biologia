@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre Nós</title>
+  <link rel="stylesheet" href="./css/sobre.css">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #141414;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background: #000;
+      padding: 20px;
+      font-size: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+
+    h1 {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      color: #e50914;
+    }
+
+    .equipe-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
+    }
+
+    .membro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 150px;
+    }
+
+    .membro img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%; /* deixa redonda */
+      object-fit: cover;
+      border: 3px solid #e50914;
+      transition: transform 0.3s ease;
+    }
+
+    .membro img:hover {
+      transform: scale(1.1);
+    }
+
+    .membro p {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    /* botão de voltar */
+    .voltar {
+      margin: 30px auto;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #e50914;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 1em;
+      text-decoration: none;
+    }
+
+    .voltar:hover {
+      background: #b20710;
+    }
+
+    @media (max-width: 600px) {
+      .membro {
+        width: 120px;
+      }
+
+      .membro img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header><img src="./img/favicon.ico" alt="Ícone" width="80"> Sobre Nós</header>
+
+  <h1>Nossa Equipe</h1>
+
+  <div class="equipe-container">
+    <div class="membro">
+      <img src="https://avatars.githubusercontent.com/u/169060996?v=4" alt="Mateus Juan">
+      <p>Mateus Juan</p>
+    </div>
+    <div class="membro">
+      <img src="./img/BIANCA.jpg" alt="Bianca Cristina">
+      <p>Bianca Cristina</p>
+    </div>
+    <div class="membro">
+      <img src="./img/João_Miguel.jpg" alt="João Miguel">
+      <p>João Miguel</p>
+    </div>
+    <div class="membro">
+      <img src="./img/sarah.jpg" alt="Sarah Lídgia">
+      <p>Sarah Lídgia</p>
+    </div>
+    <div class="membro">
+      <img src="./img/pessoa5.jpg" alt="Hilton Félix">
+      <p>Hilton Félix</p>
+    </div>
+    <div class="membro">
+      <img src="./img/ANDERSON.jpg" alt="Anderson José">
+      <p>Anderson José</p>
+    </div>
+  </div>
+
+  <a href="index.html" class="voltar">← Voltar</a>
+</body>
+</html>

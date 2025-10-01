@@ -1,14 +1,21 @@
-    function abrirPainel(titulo, texto){
+    function abrirPainel(titulo, texto, link) {
       document.getElementById("tituloPainel").innerText = titulo;
       document.getElementById("textoPainel").innerText = texto;
-      document.getElementById("painel").style.display = "block";
+
+      const btnSaibaMais = document.getElementById("btnSaibaMais");
+      btnSaibaMais.onclick = () => {
+        window.location.href = link; // abre a página específica
+      };
+
       document.getElementById("overlay").style.display = "block";
+      document.getElementById("painel").style.display = "block";
     }
 
-    function fecharPainel(){
-      document.getElementById("painel").style.display = "none";
+    function fecharPainel() {
       document.getElementById("overlay").style.display = "none";
+      document.getElementById("painel").style.display = "none";
     }
+
 
     function responder(correto){
       let res = document.getElementById("resultado");

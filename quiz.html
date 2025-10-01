@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz - Origem da Vida</title>
+  <script src="./js/quiz.js"></script>
+  <link rel="stylesheet" href="./css/quiz.css">
+  <style>
+    body {
+      background: #141414;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #e50914;
+    }
+
+    .quiz-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .quiz-container input[type="text"] {
+      padding: 10px;
+      width: 80%;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1em;
+    }
+
+    .question {
+      margin: 20px 0;
+      text-align: left;
+    }
+
+    .question p {
+      font-weight: bold;
+    }
+
+    .question button {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #e50914;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .question button:hover {
+      background: #b20710;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quiz - Origem da Vida</h1>
+  <div class="quiz-container">
+    <div id="nomeContainer">
+      <p>Digite seu nome:</p>
+      <input type="text" id="nome" placeholder="Seu nome">
+      <button onclick="iniciarQuiz()">Iniciar Quiz</button>
+    </div>
+
+    <div id="quiz" style="display:none;">
+      <div class="question" id="perguntaContainer">
+        <!-- Pergunta será inserida pelo JS -->
+      </div>
+      <button id="proxima" onclick="proximaPergunta()">Próxima</button>
+    </div>
+
+    <div id="resultado" style="display:none;"></div>
+  </div>
+
+  <script src="./js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <title>Fontes Hidrotermais</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #141414;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+      font-size: 2em;
+      background: #000;
+      letter-spacing: 2px;
+    }
+
+    main {
+      padding: 0; /* remove a margem lateral para ocupar toda a tela */
+    }
+
+    .img-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 */
+      margin: 0; /* ocupa de ponta a ponta */
+      overflow: hidden;
+    }
+
+    .img-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="../img/favicon.ico" alt="Ícone" width="60"> 
+    Experimento de Miller-Urey
+  </header>
+
+  <main>
+    <!-- Imagem 1 -->
+    <div class="img-container">
+      <img src="../img/HIDROTERMAIS_1.jpg" alt="Ilustração das Fontes Hidrotermais">
+    </div>
+
+    <!-- Imagem 2 -->
+    <div class="img-container">
+      <img src="../img/HIDROTERMAIS_2.jpg" alt="Alexander Oparin">
+    </div>
+
+    <!-- Imagem 3 -->
+    <div class="img-container">
+      <img src="../img/HIDROTERMAIS_3.jpg" alt="Condições da Terra primitiva">
+    </div>
+  </main>
+</body>
+</html>
